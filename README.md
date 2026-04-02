@@ -1,8 +1,8 @@
-# Vinharia Casa Agnello
+# Vinheria Agnello
 
 ## Descrição
 
-A Vinharia Agnello é uma empresa fictícia do ramo de vinhos, criada como estudo de caso para o desenvolvimento de um site institucional. Este repositório tem como objetivo apresentar uma página web simples sobre a Vinharia Agnello, utilizando os conhecimentos de HTML e CSS.
+A Vinheria Agnello é uma empresa fictícia do ramo de vinhos, criada como estudo de caso para o desenvolvimento de um site institucional. Este repositório tem como objetivo apresentar uma página web simples sobre a Vinheria Agnello, utilizando os conhecimentos de HTML e CSS.
 
 O projeto busca apresentar a marca, seus produtos e oferecer um canal de contato com os clientes por meio de uma interface organizada e funcional.
 

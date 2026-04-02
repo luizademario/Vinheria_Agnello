@@ -18,16 +18,23 @@ body {
     margin-bottom: 12px;
 }
 
-.menu {
-    padding-left: 20px;
+.header .menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
-.menu a {
+.header .menu li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.header .menu a {
     color: #fff5e6;
     text-decoration: none;
 }
 
-.menu a:hover {
+.header .menu a:hover {
     text-decoration: underline;
 }
 
