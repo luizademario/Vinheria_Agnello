@@ -45,6 +45,11 @@ main {
     margin-right: auto;
 }
 
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
 .footer {
     background-color: #5c1a2b;
     color: #fff5e6;
@@ -94,6 +99,12 @@ main {
     border: 1px solid #cccccc;
     padding: 12px;
     margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .grid {
