@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: #f5f0eb;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #5c1a2b;
+    color: #fff5e6;
+    padding: 15px;
+    border-bottom: 3px solid #8b4513;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.menu {
+    padding-left: 20px;
+}
+
+.menu a {
+    color: #fff5e6;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    background-color: #5c1a2b;
+    color: #fff5e6;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.tabela th {
+    background-color: #5c1a2b;
+    color: #fff5e6;
+    padding: 8px;
+    border: 1px solid #333333;
+}
+
+.tabela td {
+    padding: 8px;
+    border: 1px solid #333333;
+}
+
+.link-produto {
+    color: #5c1a2b;
+    font-weight: bold;
+}
+
+.video iframe {
+    max-width: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.grid {
+    margin-bottom: 25px;
+}
+
+.historia {
+    margin-bottom: 20px;
+}
+
+.contato {
+    margin-bottom: 20px;
+}
+
+.form-contato {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    max-width: 500px;
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+#nome {
+    width: 100%;
+    padding: 6px;
+}
+
+#email {
+    width: 100%;
+    padding: 6px;
+}
+
+#mensagem {
+    width: 100%;
+    padding: 6px;
+}
+
+.form-contato button {
+    background-color: #5c1a2b;
+    color: #fff5e6;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
