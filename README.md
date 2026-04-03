@@ -13,7 +13,7 @@ O site é composto pelas seguintes páginas:
 * **index.html:** Página inicial com apresentação da vinharia
 * **historia.html:** História da empresa e sua trajetória
 * **produtos.html:** Lista de vinhos com tabela de informações
-* **galeria.html:** Imagens e vídeo relacionados ao tema
+* **harmonizacao.html:** Página com sugestões de harmonização entre vinhos e alimentos.
 * **contato.html:** Formulário para contato do usuário
 
 ## Integrantes
@@ -22,6 +22,6 @@ O site é composto pelas seguintes páginas:
 * Gustavo Noleto
 * Lucas Gaspar
 
-## Link dos sites
+## Link do site
 
 https://luizademario.github.io/Vinheria_Agnello/
