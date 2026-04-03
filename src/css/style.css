@@ -99,6 +99,11 @@ main img {
     border: 1px solid #cccccc;
     padding: 12px;
     margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 .card img {
@@ -109,6 +114,9 @@ main img {
 
 .grid {
     margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
 }
 
 .historia {
