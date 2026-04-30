@@ -177,44 +177,93 @@ h2::after {
     margin-bottom: 20px;
 }
 
+.contato-figura {
+    display: block;
+    margin: 0 0 22px;
+    border-radius: 4px;
+    border: 1px solid #e0d8d2;
+}
+
 .form-contato {
+    box-sizing: border-box;
     background-color: #ffffff;
-    padding: 15px;
-    border: 1px solid #cccccc;
+    padding: 22px 24px;
+    border: 1px solid #ddd5ce;
+    border-radius: 6px;
     max-width: 500px;
+    box-shadow: 0 2px 10px rgba(92, 26, 43, 0.06);
+}
+
+.form-contato *,
+.form-contato *::before,
+.form-contato *::after {
+    box-sizing: border-box;
 }
 
 .campo {
-    margin-bottom: 12px;
+    margin-bottom: 18px;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #5c1a2b;
 }
 
 #nome,
 #email,
 #mensagem {
     width: 100%;
-    padding: 6px;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: inherit;
+    line-height: 1.4;
+    color: #333333;
+    background-color: #fffefb;
+}
+
+#mensagem {
+    min-height: 120px;
+    resize: vertical;
 }
 
 #nome:focus,
 #email:focus,
 #mensagem:focus {
     outline: 2px solid #5c1a2b;
+    outline-offset: 0;
     background-color: #fff3ee;
+    border-color: #8b4513;
+}
+
+.form-contato-acoes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+    padding-top: 4px;
 }
 
 .form-contato button {
     background-color: #5c1a2b;
     color: #fff5e6;
-    padding: 8px 16px;
+    padding: 10px 22px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s;
+    font: inherit;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .form-contato button:hover {
     background-color: #8b4513;
+    box-shadow: 0 2px 6px rgba(92, 26, 43, 0.2);
 }
 
 .form-contato button:focus {
     outline: 2px solid #ffd7b5;
+    outline-offset: 2px;
 }
