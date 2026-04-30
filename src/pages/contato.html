@@ -37,26 +37,28 @@
         <h2>Fale Conosco</h2>
         <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
 
-         <img src="../assets/imgs/recepcao.png">
+        <img src="../assets/imgs/recepcao.png" alt="Recepção da Vinheria Agnello" class="contato-figura">
 
-        <form action="#" method="post" class="form-contato">
+        <form action="#" method="post" class="form-contato" id="form-contato">
 
             <div class="campo">
-                <label for="nome">Coloque seu nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="2" maxlength="120" autocomplete="name" title="O nome precisa ter pelo menos 2 caracteres.">
             </div>
 
             <div class="campo">
-                <label for="email">Coloque seu e-mail:</label>
-                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required autocomplete="email" pattern=".+@.+" title="O e-mail precisa conter @ (ex.: nome@dominio.com).">
             </div>
 
             <div class="campo">
-                <label for="mensagem">Coloque sua mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui sua mensagem" required></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
             </div>
 
-            <button type="button" onclick="alert('Mensagem enviada!')">Enviar</button>
+            <div class="form-contato-acoes">
+                <button type="submit">Enviar</button>
+            </div>
 
         </form>
     </section>
@@ -65,6 +67,60 @@
     <footer class="footer">
         <p>Vinheria Agnello &copy; 2026</p>
     </footer>
+
+    <div id="modal-envio" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-envio-titulo" aria-hidden="true">
+        <div class="modal-dialogo">
+            <div class="modal-cabecalho">
+                <h2 id="modal-envio-titulo">Mensagem recebida</h2>
+            </div>
+            <div class="modal-corpo">
+                <p>Obrigado pelo contato. Em breve retornaremos.</p>
+            </div>
+            <div class="modal-rodape">
+                <button type="button" class="modal-fechar">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var form = document.getElementById("form-contato");
+            var modal = document.getElementById("modal-envio");
+            var fecharBtn = modal.querySelector(".modal-fechar");
+
+            function abrirModal() {
+                modal.classList.add("is-aberto");
+                modal.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+                fecharBtn.focus();
+            }
+
+            function fecharModal() {
+                modal.classList.remove("is-aberto");
+                modal.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = "";
+            }
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                abrirModal();
+            });
+
+            fecharBtn.addEventListener("click", fecharModal);
+
+            modal.addEventListener("click", function (e) {
+                if (e.target === modal) {
+                    fecharModal();
+                }
+            });
+
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && modal.classList.contains("is-aberto")) {
+                    fecharModal();
+                }
+            });
+        })();
+    </script>
 
 </body>
 </html>
