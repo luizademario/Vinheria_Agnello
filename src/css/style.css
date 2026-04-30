@@ -32,10 +32,21 @@ body {
 .header .menu a {
     color: #fff5e6;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .header .menu a:hover {
-    text-decoration: underline;
+    color: #ffd7b5;
+}
+
+.header .menu a:focus {
+    outline: 2px solid #ffd7b5;
+    outline-offset: 3px;
+}
+
+.header .menu a:active {
+    background-color: #8b4513;
+    color: white;
 }
 
 main {
@@ -85,13 +96,49 @@ main img {
     border: 1px solid #333333;
 }
 
+.tabela tr:hover {
+    background-color: #f2e6e0;
+}
+
 .link-produto {
     color: #5c1a2b;
     font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-produto:hover {
+    color: #8b4513;
+    text-decoration: underline;
+}
+
+.link-produto:focus {
+    outline: 2px solid #8b4513;
+    outline-offset: 3px;
+}
+
+.link-produto:active {
+    color: white;
+    background-color: #5c1a2b;
 }
 
 .video iframe {
     max-width: 100%;
+}
+
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #5c1a2b;
+    margin-top: 6px;
+}
+
+::selection {
+    background-color: #5c1a2b;
+    color: #fff5e6;
 }
 
 .card {
@@ -99,11 +146,12 @@ main img {
     border: 1px solid #cccccc;
     padding: 12px;
     margin-bottom: 15px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .card img {
@@ -138,21 +186,18 @@ main img {
     margin-bottom: 12px;
 }
 
-#nome {
-    width: 100%;
-    padding: 6px;
-}
-
-#email {
-    width: 100%;
-    padding: 6px;
-}
-
+#nome,
+#email,
 #mensagem {
     width: 100%;
-    max-width: 100%;
     padding: 6px;
-    resize: vertical;
+}
+
+#nome:focus,
+#email:focus,
+#mensagem:focus {
+    outline: 2px solid #5c1a2b;
+    background-color: #fff3ee;
 }
 
 .form-contato button {
@@ -161,4 +206,13 @@ main img {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #8b4513;
+}
+
+.form-contato button:focus {
+    outline: 2px solid #ffd7b5;
 }
