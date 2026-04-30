@@ -34,7 +34,7 @@ body {
 .header .menu a {
     color: #fff5e6;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 1.5s;
 }
 
 .header .menu a:hover {
@@ -106,7 +106,7 @@ main img {
     color: #5c1a2b;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 1.5s;
 }
 
 .link-produto:hover {
@@ -148,7 +148,7 @@ h2::after {
     border: 1px solid #cccccc;
     padding: 12px;
     margin-bottom: 15px;
-    transition: 0.3s;
+    transition: 1.5s;
 }
 
 .card:hover {
@@ -208,7 +208,7 @@ h2::after {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1.5s;
 }
 
 .form-contato button:hover {
