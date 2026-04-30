@@ -17,12 +17,12 @@ main h1 {
     animation: pulsarSuave 3s ease-in-out infinite;
 }
 
-.header .nav .menu a {
+.header nav .menu a {
     display: inline-block;
     transition: color 0.3s ease, transform 0.25s ease;
 }
 
-.header .nav .menu a:hover {
+.header nav .menu a:hover {
     transform: translateY(-3px);
 }
 
