@@ -7,6 +7,31 @@ body {
     font-family: Arial, sans-serif;
 }
 
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #5c1a2b #e8dfd6;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8dfd6;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5c1a2b;
+    border-radius: 999px;
+    border: 2px solid #e8dfd6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8b4513;
+}
+
 .header {
     background-color: #5c1a2b;
     color: #fff5e6;
