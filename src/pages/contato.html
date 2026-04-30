@@ -39,7 +39,7 @@
 
         <img src="../assets/imgs/recepcao.png" alt="Recepção da Vinheria Agnello" class="contato-figura">
 
-        <form action="#" method="post" class="form-contato" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+        <form action="#" method="post" class="form-contato" id="form-contato">
 
             <div class="campo">
                 <label for="nome">Nome</label>
@@ -67,6 +67,60 @@
     <footer class="footer">
         <p>Vinheria Agnello &copy; 2026</p>
     </footer>
+
+    <div id="modal-envio" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-envio-titulo" aria-hidden="true">
+        <div class="modal-dialogo">
+            <div class="modal-cabecalho">
+                <h2 id="modal-envio-titulo">Mensagem recebida</h2>
+            </div>
+            <div class="modal-corpo">
+                <p>Obrigado pelo contato. Em breve retornaremos.</p>
+            </div>
+            <div class="modal-rodape">
+                <button type="button" class="modal-fechar">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var form = document.getElementById("form-contato");
+            var modal = document.getElementById("modal-envio");
+            var fecharBtn = modal.querySelector(".modal-fechar");
+
+            function abrirModal() {
+                modal.classList.add("is-aberto");
+                modal.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+                fecharBtn.focus();
+            }
+
+            function fecharModal() {
+                modal.classList.remove("is-aberto");
+                modal.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = "";
+            }
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                abrirModal();
+            });
+
+            fecharBtn.addEventListener("click", fecharModal);
+
+            modal.addEventListener("click", function (e) {
+                if (e.target === modal) {
+                    fecharModal();
+                }
+            });
+
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && modal.classList.contains("is-aberto")) {
+                    fecharModal();
+                }
+            });
+        })();
+    </script>
 
 </body>
 </html>
