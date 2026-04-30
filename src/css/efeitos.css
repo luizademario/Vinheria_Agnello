@@ -17,3 +17,21 @@ main h1 {
     animation: pulsarSuave 3s ease-in-out infinite;
 }
 
+.header .nav .menu a {
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.25s ease;
+}
+
+.header .nav .menu a:hover {
+    transform: translateY(-3px);
+}
+
+.banner img {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.35s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.06) rotate(-2deg);
+}
